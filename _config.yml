@@ -1,0 +1,82 @@
+name: "Pretty Common"
+description: ""
+author: "Pretty Common"
+baseurl: "http://prettycommon.com"
+email: weare@prettycommon.com
+twitter: twnsndco
+version: 41
+
+future: true
+
+# images
+images_url: /images/inline/
+image:
+  source: images/inline
+
+# dribbble
+dribbble_set:
+  user:            'coletownsend'
+  shots_per_page:  9
+  page:            1
+  gallery_tag:     'ul'
+  gallery_class:   'dribbble-grid'
+  is_list:         true
+  a_target:        '_blank'
+  full_size:       false
+
+
+
+# A list of directories (including trailing slash) and files to exclude from the conversion
+# ============================================================
+exclude: ['README.md', '_drafts', '_compontents', '_includes','_layouts', '_plugins', '_data', 'node_modules', 'Procfile', 'Rakefile', '*.codekit', 'Gemfile.lock', 'Gemfile', '.gitignore', 'templates', '*.sublime-workspace', '*.sublime-project', '_config.yml', '*.scssc']
+include:  ['.htaccess']
+
+timezone:    America/New_York
+future:      true
+highlighter:    true
+markdown: rdiscount
+rdiscount:
+  extensions:
+    - smart
+    - generate_toc
+    - footnotes
+
+
+# Links to include in top navigation
+# For external links add external: true
+# ============================================================
+links:
+  - title: Home
+    url: /
+  - title: Shop
+    url: https://creativemarket.com/ColeTownsend/shop
+    external: true
+  - title: About
+    url: /about/
+
+permalink: /:categories/:title
+
+paginate: 6
+
+collections:
+  projects:
+    output: true
+    title: Projects
+
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
+
+source: public
+destination: dist
+
+font: Neuzeit Grotesk
+host: Github Pages
+
