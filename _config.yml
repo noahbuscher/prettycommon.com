@@ -1,9 +1,8 @@
 name: "Pretty Common"
-description: ""
+description: "Just another studio."
 author: "Pretty Common"
 baseurl: "http://prettycommon.com"
-email: weare@prettycommon.com
-twitter: twnsndco
+email: hey@prettycommon.com
 version: 41
 
 future: true
@@ -79,4 +78,3 @@ destination: dist
 
 font: Neuzeit Grotesk
 host: Github Pages
-
